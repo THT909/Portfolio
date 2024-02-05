@@ -9,6 +9,7 @@
 .icon {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .icon a {
@@ -29,7 +30,22 @@
 .text_header {
     margin-right: 20px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.text_header:hover {
+    color: var(--main-color);
 }
 
 .bnt_git {
+    border: solid 2px var(--main-color);
+    border-radius: 20px;
+    padding: 10px 14px;
+    background: #000;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.bnt_git:hover {
+    background-color: var(--main-color);
+    color: white;
 }
