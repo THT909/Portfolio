@@ -16,11 +16,7 @@ const Navigation = () => {
                 <div className={style.text_header}>Project</div>
                 <div className={style.text_header}>Education</div>
             </div>
-            <button
-                className={`${style.bnt_git} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full`}
-            >
-                Github Profile
-            </button>
+            <button className={style.bnt_git}>Github Profile</button>
         </div>
     );
 };
