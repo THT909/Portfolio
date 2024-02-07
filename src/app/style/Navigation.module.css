@@ -1,11 +1,19 @@
 .header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222a35;
+    color: white;
+    position: sticky;
+    height: 80px;
+}
+.pd {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    color: white;
+    width: 1100px;
+    max-width: 1100px;
 }
-
 .icon {
     display: flex;
     align-items: center;
@@ -13,9 +21,9 @@
 }
 
 .icon a {
-    text-decoration: none;
     color: white;
     margin-right: 10px;
+    height: 60px;
 }
 
 .portfolio {
