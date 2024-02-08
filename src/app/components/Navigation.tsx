@@ -1,5 +1,5 @@
 import style from '../style/Navigation.module.css';
-import Icon from '../utils/utils';
+import { Icon } from '../utils/utils';
 const Navigation = () => {
     return (
         <div className={style.header}>

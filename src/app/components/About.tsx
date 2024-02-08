@@ -1,5 +1,5 @@
 import style from '../style/About.module.css';
-
+import { Background } from '../utils/utils';
 const About = () => {
     return (
         <div className={style.about}>
@@ -25,6 +25,9 @@ const About = () => {
                         </div>
                     </div>
                     <div className={style.left_content}>
+                        <div className={style.background_left}>
+                            <Background />
+                        </div>
                         <div className={style.image}></div>
                     </div>
                 </div>

@@ -1,13 +1,15 @@
 .about {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
+    /* clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%); */
     width: auto;
-    background-color: #222a35;
+    background-color: #575c66;
     display: block;
 }
 .pd {
     padding: 80px 60px;
     display: flex;
+    background-color: rgb(25, 25, 36);
     justify-content: center;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 92%, 0px 100%);
 }
 .main_content {
     position: relative;
@@ -36,23 +38,34 @@
     margin-bottom: 42px;
     line-height: 32px;
 }
-
-.image {
-    width: 400px;
-    height: 400px;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    background: url(../../public/test.jpg) no-repeat center;
-    background-size: cover;
-}
 .btn_check_resume {
     border-radius: 20px;
     cursor: pointer;
     padding: 16px 42px;
     font-size: 20px;
-
     font-weight: 600;
     color: rgb(255, 255, 255);
     background: linear-gradient(to left, transparent, rgb(230, 0, 255));
     background-color: var(--main-color); /* fallback color */
+}
+
+.left_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+.image {
+    width: 360px;
+    height: 360px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    background: url(../../public/test.jpg) no-repeat center;
+    background-size: cover;
+}
+.background_left {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
 }
