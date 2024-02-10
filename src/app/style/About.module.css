@@ -1,7 +1,7 @@
 .about {
     /* clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%); */
     width: auto;
-    background-color: #575c66;
+    background-color: #14171c;
     display: block;
 }
 .pd {
@@ -41,12 +41,19 @@
 .btn_check_resume {
     border-radius: 20px;
     cursor: pointer;
-    padding: 16px 42px;
+    max-width: 250px;
+    padding: 14px 0;
     font-size: 20px;
+    text-align: center;
     font-weight: 600;
     color: rgb(255, 255, 255);
     background: linear-gradient(to left, transparent, rgb(230, 0, 255));
     background-color: var(--main-color); /* fallback color */
+    transition: all 0.2s ease-in-out 0s !important;
+    text-decoration: none;
+}
+.btn_check_resume:hover {
+    transform: scale(1.1);
 }
 
 .left_content {

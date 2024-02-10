@@ -21,7 +21,9 @@ const About = () => {
                             am ready to make a meaningful contribution and achieve great things.
                         </div>
                         <div>
-                            <button className={style.btn_check_resume}>Check resume</button>
+                            <a href="#" className={style.btn_check_resume}>
+                                Check resume
+                            </a>
                         </div>
                     </div>
                     <div className={style.left_content}>

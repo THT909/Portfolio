@@ -13,6 +13,7 @@
     align-items: center;
     width: 1100px;
     max-width: 1100px;
+    margin: 0 10px;
 }
 .icon {
     display: flex;
@@ -52,7 +53,9 @@
     color: var(--main-color);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
+
 .bnt_git:hover {
     background-color: var(--main-color);
     color: white;
