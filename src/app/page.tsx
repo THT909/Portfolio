@@ -13,8 +13,12 @@ export default function Home() {
         <div className={style.main}>
             <Navigation />
             <About />
-            <Skill />
-            <Experience />
+            <div className={style.container_skill_experience}>
+                <div className={style.content_skill_experience}>
+                    <Skill />
+                    <Experience />
+                </div>
+            </div>
             <Project />
             <Education />
             <Footer />

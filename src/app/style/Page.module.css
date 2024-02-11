@@ -3,3 +3,24 @@
 .main {
     font-family: 'Roboto', sans-serif;
 }
+.container_skill_experience {
+    background-color: #14171c;
+}
+.content_skill_experience {
+    background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+}
+.title {
+    font-weight: 600;
+    font-size: 42px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: var(--white);
+}
+.sub_title {
+    color: var(--soft-white);
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+}
