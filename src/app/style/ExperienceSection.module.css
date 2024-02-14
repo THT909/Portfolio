@@ -55,6 +55,11 @@
     box-shadow: rgba(48, 110, 232, 0.5) 0px 0px 20px;
     box-sizing: border-box;
     letter-spacing: 0.15px;
+    transition: all 0.5s ease-in-out 0s;
+}
+.tag:hover {
+    transform: translate(0, -10px);
+    box-shadow: rgba(23, 23, 23, 0.5) 0px 0px 20px;
 }
 .title_tag {
     display: flex;

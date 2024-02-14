@@ -13,14 +13,22 @@ export default function Home() {
         <div className={style.main}>
             <Navigation />
             <About />
-            <div className={style.container_skill_experience}>
+            <div className={style.container}>
                 <div className={style.content_skill_experience}>
                     <Skill />
                     <Experience />
                 </div>
             </div>
-            <Project />
-            <Education />
+            <div className={style.container}>
+                <div className={style.content_project}>
+                    <Project />
+                </div>
+            </div>
+            <div className={style.container_Education}>
+                <div className={style.content_Education}>
+                    <Education />
+                </div>
+            </div>
             <Footer />
         </div>
     );
