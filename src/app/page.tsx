@@ -24,12 +24,14 @@ export default function Home() {
                     <Project />
                 </div>
             </div>
-            <div className={style.container_Education}>
+            <div className={style.container}>
                 <div className={style.content_Education}>
                     <Education />
                 </div>
             </div>
-            <Footer />
+            <div className={style.container}>
+                <Footer />
+            </div>
         </div>
     );
 }

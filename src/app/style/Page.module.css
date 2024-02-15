@@ -2,6 +2,8 @@
 
 .main {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 .container {
     background-color: #14171c;
@@ -11,11 +13,24 @@
         linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
     padding: 40px 0;
     clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 20% 98%, 0px 100%);
-    z-index: 99;
 }
+
+.content_project {
+    background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+    padding: 40px 0;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 20% 98%, 0px 100%);
+}
+.content_Education {
+    background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+    padding: 40px 0;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 20% 98%, 0px 100%);
+}
+
 .title {
     font-weight: 600;
-    font-size: 42px;
+    font-size: 32px;
     text-align: center;
     margin: 20px 0 20px 0;
     color: var(--white);
@@ -26,12 +41,4 @@
     font-size: 18px;
     max-width: 600px;
     text-align: center;
-}
-
-.content_project {
-    background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%),
-        linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
-    padding: 40px 0;
-    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 20% 98%, 0px 100%);
-    z-index: 99;
 }

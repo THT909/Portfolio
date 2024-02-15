@@ -27,3 +27,13 @@ body {
     margin: 0;
     color: white;
 }
+script {
+    display: none;
+}
+head {
+    width: auto !important;
+}
+html {
+    background-color: black;
+    width: 100;
+}

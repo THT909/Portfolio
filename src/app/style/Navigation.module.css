@@ -1,3 +1,9 @@
+@media screen and (max-width: 705px) {
+    .title1 {
+        display: none !important;
+    }
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -23,7 +29,7 @@
 
 .icon a {
     color: white;
-    margin-right: 10px;
+    margin-right: 5px;
     height: 60px;
 }
 
@@ -32,7 +38,7 @@
     font-weight: bold;
 }
 
-.title {
+.title1 {
     display: flex;
 }
 

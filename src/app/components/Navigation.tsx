@@ -10,7 +10,7 @@ const Navigation = () => {
                     </a>
                     <div className={style.portfolio}>Portfolio</div>
                 </div>
-                <div className={style.title}>
+                <div className={style.title1}>
                     <div className={style.text_header}>About</div>
                     <div className={style.text_header}>Skills</div>
                     <div className={style.text_header}>Experience</div>

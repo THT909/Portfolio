@@ -18,70 +18,78 @@ import flutter from '../../public/flutter.png';
 import as from '../../public/Android Studio.png';
 import firebase from '../../public/Firebase.png';
 import bootstrap from '../../public/Bootstrap.png';
+import facebookSvg from '../../public/facebook.svg';
+import gitHubSvg from '../../public/github.svg';
 
 import Image from 'next/image';
 
 const Redux = () => {
-    return <Image src={redux} alt="" />;
+    return <Image width={100} height={100} src={redux} alt="" />;
 };
 
 const React = () => {
-    return <Image src={react} alt="" />;
+    return <Image width={100} height={100} src={react} alt="" />;
 };
 const Nextjs = () => {
-    return <Image src={nextjs} alt="" />;
+    return <Image width={100} height={100} src={nextjs} alt="" />;
 };
 const HTML = () => {
-    return <Image src={html} alt="" />;
+    return <Image width={100} height={100} src={html} alt="" />;
 };
 const CSS = () => {
-    return <Image src={css} alt="" />;
+    return <Image width={100} height={100} src={css} alt="" />;
 };
 
 const Js = () => {
-    return <Image src={js} alt="" />;
+    return <Image width={100} height={100} src={js} alt="" />;
 };
 const NodeJs = () => {
-    return <Image src={nodeJs} alt="" />;
+    return <Image width={100} height={100} src={nodeJs} alt="" />;
 };
 const Express = () => {
-    return <Image src={express} alt="" />;
+    return <Image width={100} height={100} src={express} alt="" />;
 };
 const Firebase = () => {
-    return <Image src={firebase} alt="" />;
+    return <Image width={100} height={100} src={firebase} alt="" />;
 };
 const MySQL = () => {
-    return <Image src={mySQL} alt="" />;
+    return <Image width={100} height={100} src={mySQL} alt="" />;
 };
 const Java = () => {
-    return <Image src={java} alt="" />;
+    return <Image width={100} height={100} src={java} alt="" />;
 };
 const XML = () => {
-    return <Image src={xml} alt="" />;
+    return <Image width={100} height={100} src={xml} alt="" />;
 };
 const As = () => {
-    return <Image src={as} alt="" />;
+    return <Image width={100} height={100} src={as} alt="" />;
 };
 const Flutter = () => {
-    return <Image src={flutter} alt="" />;
+    return <Image width={100} height={100} src={flutter} alt="" />;
 };
 const Postman = () => {
-    return <Image src={postman} alt="" />;
+    return <Image width={100} height={100} src={postman} alt="" />;
 };
 const VSCode = () => {
-    return <Image src={vsCode} alt="" />;
+    return <Image width={100} height={100} src={vsCode} alt="" />;
 };
 const Git = () => {
-    return <Image src={git} alt="" />;
+    return <Image width={100} height={100} src={git} alt="" />;
 };
 const GitHub = () => {
-    return <Image src={gitHub} alt="" />;
+    return <Image width={100} height={100} src={gitHub} alt="" />;
 };
 const Linux = () => {
-    return <Image src={linux} alt="" />;
+    return <Image width={100} height={100} src={linux} alt="" />;
 };
 const Bootstrap = () => {
-    return <Image src={bootstrap} alt="" />;
+    return <Image width={100} height={100} src={bootstrap} alt="" />;
+};
+const FacebookSvg = () => {
+    return <Image width={100} height={100} src={facebookSvg} alt="" />;
+};
+const GitHubSvg = () => {
+    return <Image width={100} height={100} src={gitHubSvg} alt="" />;
 };
 
 export {
@@ -105,4 +113,6 @@ export {
     GitHub,
     Linux,
     Bootstrap,
+    FacebookSvg,
+    GitHubSvg,
 };
