@@ -1,6 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
-};
+module.exports = {
+    exportPathMap: async function () {
+        return {
+            '/': { page: '/' }, // Trang chính
 
-export default nextConfig;
+            '/navigation': { page: '/navigation' }, // Section: Navigation
+            '/about': { page: '/about' }, // Section: About
+            '/experience': { page: '/experience' }, // Section: Experience
+            '/skill': { page: '/skill' }, // Section: Skill
+            '/education': { page: '/education' }, // Section: Education
+            '/footer': { page: '/footer' }, // Section: Footer
+            '/project': { page: '/project' }, // Section: Project
+        };
+    },
+};
