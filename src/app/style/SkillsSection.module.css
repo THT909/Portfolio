@@ -1,5 +1,6 @@
 .Skill {
     display: block;
+    padding-top: 80px;
 }
 .skill_container {
     display: flex;

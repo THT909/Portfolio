@@ -10,8 +10,8 @@
     align-items: center;
     background-color: rgb(25, 25, 36);
     color: white;
-    position: sticky;
     height: 80px;
+    z-index: 1000;
 }
 .pd {
     display: flex;
@@ -38,13 +38,15 @@
     font-weight: bold;
 }
 
-.title1 {
+.title_nav {
     display: flex;
 }
 
 .text_header {
     margin-right: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
     transition: all 0.2s ease-in-out;
 }
 .text_header:hover {

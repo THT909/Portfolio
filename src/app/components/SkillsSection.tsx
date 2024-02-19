@@ -26,7 +26,7 @@ import {
 } from '../utils/image';
 const Skill = () => {
     return (
-        <div className={style.Skill}>
+        <div id="skill" className={style.Skill}>
             <div className={style.skill_container}>
                 <div className={style.skill_title}>
                     <div className={styleMain.title}>Skills</div>

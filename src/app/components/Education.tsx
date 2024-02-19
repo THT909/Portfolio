@@ -1,10 +1,10 @@
 import style from '../style/Education.module.css';
 import Image from 'next/image';
-import reactjs from '../../public/reactjs.png';
+import UTH from '../../public/UHT_logo.jpg';
 import styleMain from '../style/Page.module.css';
 const Education = () => {
     return (
-        <div className={style.experience}>
+        <div id="education" className={style.experience}>
             <div className={style.experience_container}>
                 <div className={style.experience_title}>
                     <div className={styleMain.title}>Education</div>
@@ -16,77 +16,30 @@ const Education = () => {
                             <div className={style.tag}>
                                 <div className={style.title_tag}>
                                     <div className={style.image_tag}>
-                                        <Image alt="" src={reactjs}></Image>
+                                        <Image alt="" src={UTH} width={50} height={50}></Image>
                                     </div>
                                     <div className={style.title}>
                                         <div className={style.main_title}>
-                                            Frontend Engineer Intern
+                                            Ho Chi Minh City University of Transport
                                         </div>
-                                        <div className={style.sub_title}>Neurobit</div>
-                                        <div className={style.date_title}>June 2023 - Nov 2023</div>
+                                        <div className={style.sub_title}>
+                                            Batch 19, specializing in Information Technology.
+                                        </div>
+                                        <div className={style.date_title}>9/2019 - 12/2023</div>
                                     </div>
+                                </div>
+                                <div className={style.grade}>
+                                    <div className={style.grade_title}>Grade: </div>{' '}
+                                    <div>2,7 Gpa</div>
                                 </div>
                                 <div className={style.content}>
                                     <span className={style.main_content}>
-                                        Enhanced user experiences on Neurobit PSG & Hybrid, Portals
-                                        by resolving bugs & reduced load time by 40%. Built Neurobit
-                                        Analytics portal using React Js with seamless interaction of
-                                        REST APIs using AXIOS optimized with React Query. Refactored
-                                        previous code to TypeScript, updated with new dependency and
-                                        integrated Vite with Jest for Unit Testing.
+                                        After 4 years, I delved into courses like Data Structures
+                                        and Algorithms, Introduction to Programming, and Computer
+                                        Architecture. Through these experiences, I not only gained
+                                        technical knowledge but also developed problem-solving
+                                        skills and shaped my career interests.
                                     </span>
-                                    <br />
-                                    <div className={style.skill}>
-                                        <b>Skills:</b>
-                                        <div className={style.skill_ls}>
-                                            <div className={style.skill_name}>ReactJS,</div>
-                                            <div className={style.skill_name}>Redux,</div>
-                                            <div className={style.skill_name}>NodeJs,</div>
-                                            <div className={style.skill_name}>HTML,</div>
-                                            <div className={style.skill_name}>CSS,</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={style.line_space}>
-                                <span className={style.line_circle}></span>
-                                <span className={style.main_line}></span>
-                            </div>
-                        </li>
-                        <li className={style.item}>
-                            <div className={style.tag}>
-                                <div className={style.title_tag}>
-                                    <div className={style.image_tag}>
-                                        <Image alt="" src={reactjs} width={50} height={50}></Image>
-                                    </div>
-                                    <div className={style.title}>
-                                        <div className={style.main_title}>
-                                            Frontend Engineer Intern
-                                        </div>
-                                        <div className={style.sub_title}>Neurobit</div>
-                                        <div className={style.date_title}>June 2023 - Nov 2023</div>
-                                    </div>
-                                </div>
-                                <div className={style.content}>
-                                    <span className={style.main_content}>
-                                        Enhanced user experiences on Neurobit PSG & Hybrid, Portals
-                                        by resolving bugs & reduced load time by 40%. Built Neurobit
-                                        Analytics portal using React Js with seamless interaction of
-                                        REST APIs using AXIOS optimized with React Query. Refactored
-                                        previous code to TypeScript, updated with new dependency and
-                                        integrated Vite with Jest for Unit Testing.
-                                    </span>
-                                    <br />
-                                    <div className={style.skill}>
-                                        <b>Skill:</b>
-                                        <div className={style.skill_ls}>
-                                            <div className={style.skill_name}>ReactJS</div>
-                                            <div className={style.skill_name}>Redux</div>
-                                            <div className={style.skill_name}>NodeJs</div>
-                                            <div className={style.skill_name}>HTML</div>
-                                            <div className={style.skill_name}>CSS</div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div className={style.line_space}>

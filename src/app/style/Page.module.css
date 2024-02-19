@@ -42,3 +42,9 @@
     max-width: 600px;
     text-align: center;
 }
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+}

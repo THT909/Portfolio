@@ -11,7 +11,9 @@ import style from './style/Page.module.css';
 export default function Home() {
     return (
         <div className={style.main}>
-            <Navigation />
+            <div className={style.nav}>
+                <Navigation />
+            </div>
             <About />
             <div className={style.container}>
                 <div className={style.content_skill_experience}>

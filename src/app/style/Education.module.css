@@ -105,15 +105,13 @@
     color: var(--soft-white);
     line-height: 24px;
 }
-.skill {
+.grade {
+    padding-top: 10px;
     display: flex;
-}
-.skill_ls {
-    display: flex;
-    flex-wrap: wrap;
-}
-.skill_name {
-    padding-left: 6px;
+    font-size: 14px;
     color: var(--soft-white);
-    opacity: 0.7;
+}
+.grade_title {
+    font-weight: 600;
+    padding-right: 2px;
 }

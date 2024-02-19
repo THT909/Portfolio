@@ -20,12 +20,19 @@
     padding: 20px 20px 20px 0px;
     font-size: 16px;
     color: var(--soft-white);
+    transition: all 0.2s ease-in-out;
+}
+.nav:hover {
+    color: var(--main-color);
 }
 .icon_ls {
     display: flex;
     margin-top: 1rem;
     flex-wrap: wrap;
     gap: 20px;
+}
+.icon {
+    cursor: pointer;
 }
 .icon img {
     width: 24px;

@@ -30,10 +30,14 @@ body {
 script {
     display: none;
 }
+title {
+    display: none;
+}
 head {
     width: auto !important;
 }
 html {
     background-color: black;
     width: 100;
+    scroll-behavior: smooth;
 }

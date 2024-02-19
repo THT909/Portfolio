@@ -2,7 +2,7 @@ import style from '../style/About.module.css';
 import { Background } from '../utils/utils';
 const About = () => {
     return (
-        <div className={style.about}>
+        <div id="about" className={style.about}>
             <div className={style.pd}>
                 <div className={style.main_content}>
                     <div className={style.right_content}>
@@ -15,13 +15,17 @@ const About = () => {
                             I am a<span> Web developer</span>
                         </div>
                         <div className={style.description}>
-                            I am a motivated and versatile individual, always eager to take on new
-                            challenges. With a passion for learning I am dedicated to delivering
-                            high-quality results. With a positive attitude and a growth mindset, I
-                            am ready to make a meaningful contribution and achieve great things.
+                            I am a recent graduate in Information Technology, eager to continuously
+                            expand my experience and knowledge. I am a well-rounded individual with
+                            a keen interest in the Information Technology field, particularly in
+                            roles like Developer. I am actively seeking a position related to
+                            Development in a professional work environment
                         </div>
-                        <div>
-                            <a href="#" className={style.btn_check_resume}>
+                        <div className={style.btn}>
+                            <a
+                                href="https://drive.google.com/file/d/1Sas2E4eL2pNwZYSjiLOiLhGYZJVZCdeE/view?usp=sharing"
+                                className={style.btn_check_resume}
+                            >
                                 Check resume
                             </a>
                         </div>

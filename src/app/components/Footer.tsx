@@ -7,31 +7,31 @@ const Footer = () => {
         <div className={style.footer}>
             <div className={style.name}>Trầm Hiệp Thành</div>
             <div className={style.sub_nav}>
-                <a href="" className={style.nav}>
+                <a href="#about" className={style.nav}>
                     About
                 </a>
-                <a href="" className={style.nav}>
+                <a href="#skill" className={style.nav}>
                     Skills
                 </a>
-                <a href="" className={style.nav}>
+                <a href="#experience" className={style.nav}>
                     Experience
                 </a>
-                <a href="" className={style.nav}>
+                <a href="#project" className={style.nav}>
                     Projects
                 </a>
-                <a href="" className={style.nav}>
+                <a href="#education" className={style.nav}>
                     Education
                 </a>
             </div>
             <div className={style.icon_ls}>
-                <div className={style.icon}>
+                <a href="https://www.facebook.com/t.h.thanh0304" className={style.icon}>
                     <FacebookSvg />
-                </div>
-                <div className={style.icon}>
+                </a>
+                <a href="https://github.com/THT909/" className={style.icon}>
                     <GitHubSvg />
-                </div>
+                </a>
             </div>
-            <div className={style.copy_right}>© 2023 THT909. All rights reserved.</div>
+            <div className={style.copy_right}>© 2024 THT909. All rights reserved.</div>
         </div>
     );
 };
