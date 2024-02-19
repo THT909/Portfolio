@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    '/': { page: '/' },
+module.exports = {
+    output: 'export',
 };
-
-export default nextConfig;
