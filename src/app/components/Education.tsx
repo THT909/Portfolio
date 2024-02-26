@@ -29,8 +29,8 @@ const Education = () => {
                                     </div>
                                 </div>
                                 <div className={style.grade}>
-                                    <div className={style.grade_title}>Grade: </div>{' '}
-                                    <div>2,7 Gpa</div>
+                                    <div className={style.grade_title}>Degree classification: </div>{' '}
+                                    <div>Good</div>
                                 </div>
                                 <div className={style.content}>
                                     <span className={style.main_content}>
