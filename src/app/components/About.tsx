@@ -23,7 +23,7 @@ const About = () => {
                         </div>
                         <div className={style.btn}>
                             <a
-                                href="https://drive.google.com/file/d/1j1mi5csCtL_BBz79TfjBZszEKTOdDjDE/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1X5u9KwIitKPS1TBj9HQM0tlEiC3X-YxF/view?usp=sharing"
                                 className={style.btn_check_resume}
                             >
                                 Check resume

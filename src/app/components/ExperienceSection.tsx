@@ -61,19 +61,27 @@ const Experience = () => {
                                     <div className={style.title}>
                                         <div className={style.main_title}>BackEnd Intern</div>
                                         <div className={style.sub_title}>SGOD</div>
-                                        <div className={style.date_title}>03/2024 - now</div>
+                                        <div className={style.date_title}>03/2024 - 07/2024</div>
                                     </div>
                                 </div>
                                 <div className={style.content}>
-                                    <span className={style.main_content}>Comming soon ,.....</span>
+                                    <span className={style.main_content}>
+                                        In this role, I had the opportunity to explore new
+                                        technologies like TypeScript, MongoDB, and NestJS. I gained
+                                        hands-on experience in backend development, learning how
+                                        real-world systems are architected and how they function in
+                                        practice. Additionally, this experience greatly enhanced my
+                                        teamwork skills as I collaborated closely with my colleagues
+                                        to solve complex problems and build robust solutions.
+                                    </span>
                                     <br />
                                     <div className={style.skill}>
                                         <b>Skills:</b>
                                         <div className={style.skill_ls}>
                                             <div className={style.skill_name}>NestJS,</div>
-                                            <div className={style.skill_name}>MongoDB</div>
-                                            <div className={style.skill_name}>API</div>
-                                            <div className={style.skill_name}>Jwt</div>
+                                            <div className={style.skill_name}>MongoDB,</div>
+                                            <div className={style.skill_name}>API,</div>
+                                            <div className={style.skill_name}>Jwt,</div>
                                         </div>
                                     </div>
                                 </div>
