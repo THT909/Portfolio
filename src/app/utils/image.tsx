@@ -20,6 +20,8 @@ import firebase from '../../public/Firebase.png';
 import bootstrap from '../../public/Bootstrap.png';
 import facebookSvg from '../../public/facebook.svg';
 import gitHubSvg from '../../public/github.svg';
+import kafka from '../../public/Kafka.svg';
+import nestjs from '../../public/nestjs.svg';
 
 import Image from 'next/image';
 
@@ -91,6 +93,12 @@ const FacebookSvg = () => {
 const GitHubSvg = () => {
     return <Image width={100} height={100} src={gitHubSvg} alt="" />;
 };
+const Kafka = () => {
+    return <Image width={100} height={100} src={kafka} alt="" />;
+};
+const NestJS = () => {
+    return <Image width={100} height={100} src={nestjs} alt="" />;
+};
 
 export {
     Redux,
@@ -115,4 +123,6 @@ export {
     Bootstrap,
     FacebookSvg,
     GitHubSvg,
+    Kafka,
+    NestJS,
 };

@@ -1,29 +1,7 @@
 import style from '../style/SkillsSection.module.css';
-import Image from 'next/image';
 import reactjs from '../../public/reactjs.png';
 import styleMain from '../style/Page.module.css';
-import {
-    Redux,
-    React,
-    Nextjs,
-    HTML,
-    CSS,
-    Js,
-    NodeJs,
-    Express,
-    Firebase,
-    MySQL,
-    Java,
-    XML,
-    As,
-    Flutter,
-    Postman,
-    VSCode,
-    Git,
-    GitHub,
-    Linux,
-    Bootstrap,
-} from '../utils/image';
+import * as Image from '../utils/image';
 const Skill = () => {
     return (
         <div id="skill" className={style.Skill}>
@@ -38,13 +16,13 @@ const Skill = () => {
                         <div className={style.skill_item_list}>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <React />
+                                    <Image.React />
                                 </div>
                                 <a className={style.skill_name}>React Js</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Redux />
+                                    <Image.Redux />
                                 </div>
                                 <a className={style.skill_name}>Redux</a>
                             </div>
@@ -53,31 +31,31 @@ const Skill = () => {
                                     style={{ background: 'white', borderRadius: '20px' }}
                                     className={style.skill_image}
                                 >
-                                    <Nextjs />
+                                    <Image.Nextjs />
                                 </div>
                                 <a className={style.skill_name}>Next Js</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <HTML />
+                                    <Image.HTML />
                                 </div>
                                 <a className={style.skill_name}>HTML</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <CSS />
+                                    <Image.CSS />
                                 </div>
                                 <a className={style.skill_name}>CSS</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Js />
+                                    <Image.Js />
                                 </div>
                                 <a className={style.skill_name}>JavaScript</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Bootstrap />
+                                    <Image.Bootstrap />
                                 </div>
                                 <a className={style.skill_name}>BootStrap</a>
                             </div>
@@ -91,31 +69,40 @@ const Skill = () => {
                                     style={{ background: 'white', borderRadius: '20px' }}
                                     className={style.skill_image}
                                 >
-                                    <NodeJs />
+                                    <Image.NestJS />
+                                </div>
+                                <a className={style.skill_name}>NestJs</a>
+                            </div>
+                            <div className={style.skill_item}>
+                                <div
+                                    style={{ background: 'white', borderRadius: '20px' }}
+                                    className={style.skill_image}
+                                >
+                                    <Image.NodeJs />
                                 </div>
                                 <a className={style.skill_name}>NodeJs</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Express />
+                                    <Image.Express />
                                 </div>
                                 <a className={style.skill_name}>Express</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Js />
+                                    <Image.Js />
                                 </div>
                                 <a className={style.skill_name}>JavaScript</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Firebase />
+                                    <Image.Firebase />
                                 </div>
                                 <a className={style.skill_name}>Firebase</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <MySQL />
+                                    <Image.MySQL />
                                 </div>
                                 <a className={style.skill_name}>MySQL</a>
                             </div>
@@ -126,25 +113,25 @@ const Skill = () => {
                         <div className={style.skill_item_list}>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Java />
+                                    <Image.Java />
                                 </div>
                                 <a className={style.skill_name}>Java</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <XML />
+                                    <Image.XML />
                                 </div>
                                 <a className={style.skill_name}>XML</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <As />
+                                    <Image.As />
                                 </div>
                                 <a className={style.skill_name}>Android Studio</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Flutter />
+                                    <Image.Flutter />
                                 </div>
                                 <a className={style.skill_name}>Flutter</a>
                             </div>
@@ -155,19 +142,19 @@ const Skill = () => {
                         <div className={style.skill_item_list}>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Postman />
+                                    <Image.Postman />
                                 </div>
                                 <a className={style.skill_name}>Postman</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <VSCode />
+                                    <Image.VSCode />
                                 </div>
                                 <a className={style.skill_name}>VS Code</a>
                             </div>
                             <div className={style.skill_item}>
                                 <div className={style.skill_image}>
-                                    <Git />
+                                    <Image.Git />
                                 </div>
                                 <a className={style.skill_name}>Git</a>
                             </div>
@@ -176,7 +163,7 @@ const Skill = () => {
                                     style={{ background: 'white', borderRadius: '20px' }}
                                     className={style.skill_image}
                                 >
-                                    <GitHub />
+                                    <Image.GitHub />
                                 </div>
                                 <a className={style.skill_name}>GitHub</a>
                             </div>
@@ -185,9 +172,18 @@ const Skill = () => {
                                     style={{ background: 'white', borderRadius: '20px' }}
                                     className={style.skill_image}
                                 >
-                                    <Linux />
+                                    <Image.Linux />
                                 </div>
                                 <a className={style.skill_name}>Linux</a>
+                            </div>
+                            <div className={style.skill_item}>
+                                <div
+                                    style={{ background: 'white', borderRadius: '20px' }}
+                                    className={style.skill_image}
+                                >
+                                    <Image.Kafka />
+                                </div>
+                                <a className={style.skill_name}>Kafka</a>
                             </div>
                         </div>
                     </div>

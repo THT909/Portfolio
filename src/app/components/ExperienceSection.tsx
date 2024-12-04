@@ -87,6 +87,51 @@ const Experience = () => {
                                 </div>
                             </div>
                         </li>
+                        <li className={style.item}>
+                            <div className={style.line_space}>
+                                <span className={style.line_circle}></span>
+                                <span className={style.main_line}></span>
+                            </div>
+                            <div className={style.tag}>
+                                <div className={style.title_tag}>
+                                    <div className={style.image_tag}>
+                                        <Image alt="" src={reactjs}></Image>
+                                    </div>
+                                    <div className={style.title}>
+                                        <div className={style.main_title}>BackEnd Fresher</div>
+                                        <div className={style.sub_title}>SGOD</div>
+                                        <div className={style.date_title}>08/2024 - 12/2024</div>
+                                    </div>
+                                </div>
+                                <div className={style.content}>
+                                    <span className={style.main_content}>
+                                        During my time working here, I gained valuable insights into
+                                        backend development, particularly around microservices. I
+                                        had the chance to explore technologies such as Docker,
+                                        Kafka, and gRPC, which deepened my understanding of system
+                                        architecture and how scalable systems are built. This
+                                        experience allowed me to apply these technologies in
+                                        real-world scenarios, enhancing my technical skills while
+                                        also improving my problem-solving and collaboration
+                                        abilities within the team.
+                                    </span>
+                                    <br />
+                                    <div className={style.skill}>
+                                        <b>Skills:</b>
+                                        <div className={style.skill_ls}>
+                                            <div className={style.skill_name}>NestJS,</div>
+                                            <div className={style.skill_name}>MongoDB,</div>
+                                            <div className={style.skill_name}>API,</div>
+                                            <div className={style.skill_name}>Kafka,</div>
+                                            <div className={style.skill_name}>Grpc,</div>
+                                            <div className={style.skill_name}>Mongo,</div>
+                                            <div className={style.skill_name}>Redis,</div>
+                                            <div className={style.skill_name}>Microservice,...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
