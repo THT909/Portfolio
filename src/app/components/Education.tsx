@@ -2,6 +2,13 @@ import style from '../style/Education.module.css';
 import Image from 'next/image';
 import UTH from '../../public/UHT_logo.jpg';
 import styleMain from '../style/Page.module.css';
+import { educations } from '../data/education';
+
+/** Maps logoKey strings from the data layer to their image imports */
+const logoMap = {
+    UTH: UTH,
+} as const;
+
 const Education = () => {
     return (
         <div id="education" className={style.experience}>
@@ -12,41 +19,44 @@ const Education = () => {
                 </div>
                 <div className={style.experience_component}>
                     <ul className={style.menu}>
-                        <li className={style.item}>
-                            <div className={style.tag}>
-                                <div className={style.title_tag}>
-                                    <div className={style.image_tag}>
-                                        <Image alt="" src={UTH} width={50} height={50}></Image>
-                                    </div>
-                                    <div className={style.title}>
-                                        <div className={style.main_title}>
-                                            Ho Chi Minh City University of Transport
+                        {educations.map((edu, index) => (
+                            <li key={index} className={style.item}>
+                                <div className={style.tag}>
+                                    <div className={style.title_tag}>
+                                        <div className={style.image_tag}>
+                                            <Image
+                                                alt=""
+                                                src={logoMap[edu.logoKey]}
+                                                width={50}
+                                                height={50}
+                                            />
                                         </div>
-                                        <div className={style.sub_title}>
-                                            Batch 19, specializing in Information Technology.
+                                        <div className={style.title}>
+                                            <div className={style.main_title}>
+                                                {edu.institution}
+                                            </div>
+                                            <div className={style.sub_title}>
+                                                {edu.degree}
+                                            </div>
+                                            <div className={style.date_title}>{edu.period}</div>
                                         </div>
-                                        <div className={style.date_title}>9/2019 - 12/2023</div>
+                                    </div>
+                                    <div className={style.grade}>
+                                        <div className={style.grade_title}>Degree classification: </div>{' '}
+                                        <div>{edu.classification}</div>
+                                    </div>
+                                    <div className={style.content}>
+                                        <span className={style.main_content}>
+                                            {edu.description}
+                                        </span>
                                     </div>
                                 </div>
-                                <div className={style.grade}>
-                                    <div className={style.grade_title}>Degree classification: </div>{' '}
-                                    <div>Good</div>
+                                <div className={style.line_space}>
+                                    <span className={style.line_circle}></span>
+                                    <span className={style.main_line}></span>
                                 </div>
-                                <div className={style.content}>
-                                    <span className={style.main_content}>
-                                        After 4 years, I delved into courses like Data Structures
-                                        and Algorithms, Introduction to Programming, and Computer
-                                        Architecture. Through these experiences, I not only gained
-                                        technical knowledge but also developed problem-solving
-                                        skills and shaped my career interests.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className={style.line_space}>
-                                <span className={style.line_circle}></span>
-                                <span className={style.main_line}></span>
-                            </div>
-                        </li>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

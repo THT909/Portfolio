@@ -1,5 +1,7 @@
 import style from '../style/Navigation.module.css';
 import { Icon } from '../utils/utils';
+import { about } from '../data/about';
+
 const Navigation = () => {
     return (
         <div className={style.header}>
@@ -27,7 +29,7 @@ const Navigation = () => {
                         Education
                     </a>
                 </div>
-                <a href="https://github.com/THT909/" className={style.bnt_git}>
+                <a href={about.githubUrl} className={style.bnt_git}>
                     Github Profile
                 </a>
             </div>

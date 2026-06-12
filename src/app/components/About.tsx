@@ -1,5 +1,7 @@
 import style from '../style/About.module.css';
 import { Background } from '../utils/utils';
+import { about } from '../data/about';
+
 const About = () => {
     return (
         <div id="about" className={style.about}>
@@ -9,21 +11,17 @@ const About = () => {
                         <div className={style.title}>
                             Hi, I am
                             <br />
-                            Trầm Hiệp Thành
+                            {about.name}
                         </div>
                         <div className={style.sub}>
-                            I am a<span> Web developer</span>
+                            I am a<span> {about.role}</span>
                         </div>
                         <div className={style.description}>
-                            I am a recent graduate in Information Technology, eager to continuously
-                            expand my experience and knowledge. I am a well-rounded individual with
-                            a keen interest in the Information Technology field, particularly in
-                            roles like Developer. I am actively seeking a position related to
-                            Development in a professional work environment
+                            {about.description}
                         </div>
                         <div className={style.btn}>
                             <a
-                                href="https://drive.google.com/file/d/1X5u9KwIitKPS1TBj9HQM0tlEiC3X-YxF/view?usp=sharing"
+                                href={about.resumeUrl}
                                 className={style.btn_check_resume}
                             >
                                 Check resume

@@ -1,11 +1,11 @@
-import exp from 'constants';
 import style from '../style/Footer.module.css';
-import Image from 'next/image';
 import { FacebookSvg, GitHubSvg } from '../utils/image';
+import { about } from '../data/about';
+
 const Footer = () => {
     return (
         <div className={style.footer}>
-            <div className={style.name}>Trầm Hiệp Thành</div>
+            <div className={style.name}>{about.name}</div>
             <div className={style.sub_nav}>
                 <a href="#about" className={style.nav}>
                     About
@@ -24,10 +24,10 @@ const Footer = () => {
                 </a>
             </div>
             <div className={style.icon_ls}>
-                <a href="https://www.facebook.com/t.h.thanh0304" className={style.icon}>
+                <a href={about.facebookUrl} className={style.icon}>
                     <FacebookSvg />
                 </a>
-                <a href="https://github.com/THT909/" className={style.icon}>
+                <a href={about.githubUrl} className={style.icon}>
                     <GitHubSvg />
                 </a>
             </div>
