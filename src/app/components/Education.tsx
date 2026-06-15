@@ -1,13 +1,8 @@
-import style from '../style/Education.module.css';
 import Image from 'next/image';
-import UTH from '../../public/UHT_logo.jpg';
+import style from '../style/Education.module.css';
 import styleMain from '../style/Page.module.css';
 import { educations } from '../data/education';
-
-/** Maps logoKey strings from the data layer to their image imports */
-const logoMap = {
-    UTH: UTH,
-} as const;
+import { getImagePath } from '../utils/images';
 
 const Education = () => {
     return (
@@ -25,8 +20,8 @@ const Education = () => {
                                     <div className={style.title_tag}>
                                         <div className={style.image_tag}>
                                             <Image
-                                                alt=""
-                                                src={logoMap[edu.logoKey]}
+                                                src={getImagePath(edu.imageKey)}
+                                                alt={edu.institution}
                                                 width={50}
                                                 height={50}
                                             />

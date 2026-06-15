@@ -1,18 +1,10 @@
-import type { StaticImageData } from 'next/image';
-
-import appNote     from '../../public/project/Note_app.png';
-import bookingCare from '../../public/project/Booking_care.png';
-import music       from '../../public/project/Music.png';
-import weather     from '../../public/project/Weather_app.png';
-import theBand     from '../../public/project/The_band.png';
-import thisPage    from '../../public/project/This_page.png';
-
 export type Project = {
     name: string;
     period: string;
     description: string;
     skills: string[];
-    image: StaticImageData;
+    /** Key into the centralized imageMap in utils/images.ts */
+    imageKey: string;
     link: string;
 };
 
@@ -23,7 +15,7 @@ export const projects: Project[] = [
         description:
             'The Note application is developed in Java with a simple interface, utilizing Firebase for storage and user authentication. Ensuring stable performance, I enhanced skills in data storage and user authentication during development.',
         skills: ['Java', 'XML', 'Fire base', 'Android Studio'],
-        image: appNote,
+        imageKey: 'project-note-app',
         link: 'https://github.com/THT909/Notes_application',
     },
     {
@@ -32,7 +24,7 @@ export const projects: Project[] = [
         description:
             'The Booking Care Appointment Booking project is a sophisticated web application. The frontend is built using ReactJS, Redux, Axios, Bootstrap, SCSS, and HTML. The backend is developed with NodeJS, MySQL, Express, and tested using Postman. Throughout the development process, I not only acquired programming skills but also gained in-depth understanding of web development models and project management.',
         skills: ['ReactJs', 'Html', 'NodeJs', 'Css', 'Bootstrap', 'MySql', 'Redux', 'Express', 'Axios'],
-        image: bookingCare,
+        imageKey: 'project-booking-care',
         link: 'https://github.com/THT909/Project_SERN',
     },
     {
@@ -41,7 +33,7 @@ export const projects: Project[] = [
         description:
             'My Web App Music, built with HTML, JS, and CSS, features a simple interface and functionality, serving both educational and personal use purposes.',
         skills: ['Html', 'Css', 'JavaScrip', 'Local Storage'],
-        image: music,
+        imageKey: 'project-music',
         link: 'https://musicforme909.netlify.app/',
     },
     {
@@ -50,7 +42,7 @@ export const projects: Project[] = [
         description:
             'This is a simple static website I created when I first started learning HTML, CSS, and JavaScript.',
         skills: ['Html', 'Css', 'JavaScript'],
-        image: theBand,
+        imageKey: 'project-the-band',
         link: 'https://github.com/THT909/The_band',
     },
     {
@@ -59,7 +51,7 @@ export const projects: Project[] = [
         description:
             'My Weather Forecast app, fueled by the OpenWeather API, refines my skills in API interaction and applies programming knowledge learned previously.',
         skills: ['Html', 'Css', 'API'],
-        image: weather,
+        imageKey: 'project-weather',
         link: 'https://63103eb7c014d2192e0172db--my-weather-909.netlify.app/',
     },
     {
@@ -68,7 +60,7 @@ export const projects: Project[] = [
         description:
             'This page is the current website you are viewing. I used Next.js and pure CSS to create it. In addition to showcasing my skills for you, it also serves the purpose of reinforcing my existing knowledge and gaining hands-on experience in coding with Next.js.',
         skills: ['NexJs', 'Html', 'Css'],
-        image: thisPage,
+        imageKey: 'project-portfolio',
         link: '',
     },
 ];

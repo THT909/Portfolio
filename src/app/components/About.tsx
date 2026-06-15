@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import style from '../style/About.module.css';
 import { Background } from '../utils/utils';
 import { about } from '../data/about';
+import { getImagePath } from '../utils/images';
 
 const About = () => {
     return (
@@ -32,7 +34,16 @@ const About = () => {
                         <div className={style.background_left}>
                             <Background />
                         </div>
-                        <div className={style.image}></div>
+                        <div className={style.image_container}>
+                            <Image
+                                src={getImagePath(about.imageKey)}
+                                alt={about.name}
+                                width={400}
+                                height={400}
+                                className={style.image}
+                                priority
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

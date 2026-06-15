@@ -1,8 +1,8 @@
 export type Skill = {
     name: string;
-    /** Matches a named export in utils/image.tsx */
+    /** Key into the centralized imageMap in utils/images.ts */
     imageKey: string;
-    /** When true, the image wrapper needs a white background (mirrors existing inline style) */
+    /** When true, the image wrapper gets a white background */
     whiteBg?: boolean;
 };
 
@@ -15,44 +15,44 @@ export const skills: SkillCategory[] = [
     {
         category: 'Frontend',
         items: [
-            { name: 'React Js',   imageKey: 'React' },
-            { name: 'Redux',      imageKey: 'Redux' },
-            { name: 'Next Js',    imageKey: 'Nextjs',    whiteBg: true },
-            { name: 'HTML',       imageKey: 'HTML' },
-            { name: 'CSS',        imageKey: 'CSS' },
-            { name: 'JavaScript', imageKey: 'Js' },
-            { name: 'BootStrap',  imageKey: 'Bootstrap' },
+            { name: 'React Js',   imageKey: 'skill-react' },
+            { name: 'Redux',      imageKey: 'skill-redux' },
+            { name: 'Next Js',    imageKey: 'skill-nextjs',    whiteBg: true },
+            { name: 'HTML',       imageKey: 'skill-html' },
+            { name: 'CSS',        imageKey: 'skill-css' },
+            { name: 'JavaScript', imageKey: 'skill-javascript' },
+            { name: 'BootStrap',  imageKey: 'skill-bootstrap' },
         ],
     },
     {
         category: 'Backend',
         items: [
-            { name: 'NestJs',     imageKey: 'NestJS',    whiteBg: true },
-            { name: 'NodeJs',     imageKey: 'NodeJs',    whiteBg: true },
-            { name: 'Express',    imageKey: 'Express' },
-            { name: 'JavaScript', imageKey: 'Js' },
-            { name: 'Firebase',   imageKey: 'Firebase' },
-            { name: 'MySQL',      imageKey: 'MySQL' },
+            { name: 'NestJs',     imageKey: 'skill-nestjs',    whiteBg: true },
+            { name: 'NodeJs',     imageKey: 'skill-nodejs',    whiteBg: true },
+            { name: 'Express',    imageKey: 'skill-express' },
+            { name: 'JavaScript', imageKey: 'skill-javascript' },
+            { name: 'Firebase',   imageKey: 'skill-firebase' },
+            { name: 'MySQL',      imageKey: 'skill-mysql' },
         ],
     },
     {
         category: 'Android',
         items: [
-            { name: 'Java',           imageKey: 'Java' },
-            { name: 'XML',            imageKey: 'XML' },
-            { name: 'Android Studio', imageKey: 'As' },
-            { name: 'Flutter',        imageKey: 'Flutter' },
+            { name: 'Java',           imageKey: 'skill-java' },
+            { name: 'XML',            imageKey: 'skill-xml' },
+            { name: 'Android Studio', imageKey: 'skill-android-studio' },
+            { name: 'Flutter',        imageKey: 'skill-flutter' },
         ],
     },
     {
         category: 'Other',
         items: [
-            { name: 'Postman', imageKey: 'Postman' },
-            { name: 'VS Code', imageKey: 'VSCode' },
-            { name: 'Git',     imageKey: 'Git' },
-            { name: 'GitHub',  imageKey: 'GitHub',  whiteBg: true },
-            { name: 'Linux',   imageKey: 'Linux',   whiteBg: true },
-            { name: 'Kafka',   imageKey: 'Kafka',   whiteBg: true },
+            { name: 'Postman', imageKey: 'skill-postman' },
+            { name: 'VS Code', imageKey: 'skill-vscode' },
+            { name: 'Git',     imageKey: 'skill-git' },
+            { name: 'GitHub',  imageKey: 'skill-github',  whiteBg: true },
+            { name: 'Linux',   imageKey: 'skill-linux',   whiteBg: true },
+            { name: 'Kafka',   imageKey: 'skill-kafka',   whiteBg: true },
         ],
     },
 ];

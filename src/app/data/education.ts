@@ -4,8 +4,8 @@ export type Education = {
     period: string;
     classification: string;
     description: string;
-    /** Maps to an image import in the Education component */
-    logoKey: 'UTH';
+    /** Key into the centralized imageMap in utils/images.ts */
+    imageKey: string;
 };
 
 export const educations: Education[] = [
@@ -16,6 +16,6 @@ export const educations: Education[] = [
         classification: 'Good',
         description:
             'After 4 years, I delved into courses like Data Structures and Algorithms, Introduction to Programming, and Computer Architecture. Through these experiences, I not only gained technical knowledge but also developed problem-solving skills and shaped my career interests.',
-        logoKey: 'UTH',
+        imageKey: 'edu-uth',
     },
 ];

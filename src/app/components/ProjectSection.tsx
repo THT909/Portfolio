@@ -1,7 +1,8 @@
-import style from '../style/ProjectSection.module.css';
 import Image from 'next/image';
+import style from '../style/ProjectSection.module.css';
 import styleMain from '../style/Page.module.css';
 import { projects } from '../data/projects';
+import { getImagePath } from '../utils/images';
 
 const Project = () => {
     return (
@@ -15,7 +16,12 @@ const Project = () => {
                     {projects.map((project, index) => (
                         <div key={index} className={style.tag}>
                             <div className={style.image}>
-                                <Image alt="" src={project.image} />
+                                <Image
+                                    src={getImagePath(project.imageKey)}
+                                    alt={project.name}
+                                    width={400}
+                                    height={240}
+                                />
                             </div>
                             <div className={style.skill_ls}>
                                 {project.skills.map((skill, skillIndex) => (

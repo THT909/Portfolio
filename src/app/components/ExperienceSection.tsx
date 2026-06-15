@@ -1,8 +1,8 @@
-import style from '../style/ExperienceSection.module.css';
 import Image from 'next/image';
-import reactjs from '../../public/reactjs.png';
+import style from '../style/ExperienceSection.module.css';
 import styleMain from '../style/Page.module.css';
 import { experiences } from '../data/experience';
+import { getImagePath } from '../utils/images';
 
 const Experience = () => {
     return (
@@ -23,7 +23,12 @@ const Experience = () => {
                                 <div className={style.tag}>
                                     <div className={style.title_tag}>
                                         <div className={style.image_tag}>
-                                            <Image alt="" src={reactjs} />
+                                            <Image
+                                                src={getImagePath(exp.imageKey)}
+                                                alt={exp.company}
+                                                width={50}
+                                                height={50}
+                                            />
                                         </div>
                                         <div className={style.title}>
                                             <div className={style.main_title}>{exp.title}</div>
